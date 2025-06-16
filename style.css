@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s ease;
+}
+
+body.work-session { background-color: #dbeafe; }
+body.short-break-session { background-color: #dcfce7; }
+body.long-break-session { background-color: #e0e7ff; }
+
+.app-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #374151;
+    margin-bottom: 20px;
+}
+
+/* Session Type Buttons */
+.session-types {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.session-btn {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    color: #6b7280;
+    transition: all 0.3s ease;
+}
+
+.session-btn.active {
+    background-color: #374151;
+    color: white;
+}
+
+/* Timer Display */
+.timer-display {
+    font-size: 6em;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 30px;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.control-btn {
+    background-color: #374151;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(55, 65, 81, 0.2);
+}
+
+.control-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(55, 65, 81, 0.3);
+}
+
+.hidden {
+    display: none;
+}

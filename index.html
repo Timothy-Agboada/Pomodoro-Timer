@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Pomodoro</h1>
+        <div class="session-types">
+            <button class="session-btn active" data-time="1500">Work</button>
+            <button class="session-btn" data-time="300">Short Break</button>
+            <button class="session-btn" data-time="900">Long Break</button>
+        </div>
+        <div class="timer-display">
+            <span id="minutes">25</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="startBtn" class="control-btn"><i class="fas fa-play"></i></button>
+            <button id="pauseBtn" class="control-btn hidden"><i class="fas fa-pause"></i></button>
+            <button id="resetBtn" class="control-btn"><i class="fas fa-redo"></i></button>
+        </div>
+    </div>
+    <!-- Notification Sound -->
+    <audio id="notificationSound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
